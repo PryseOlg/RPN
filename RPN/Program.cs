@@ -12,36 +12,7 @@ namespace RPN
             Console.WriteLine(ToPrefix("2+5*7-4:4"));
             
         }
-
-        static string ToRpn(string expression)
-        {
-            return expression;
-        }
-
-        // static string Tostack(string expression)
-        // {
-        //     string advexpression = null;
-        //     int count = default;
-        //     if (expression.Contains('('))
-        //     {
-        //         for (int i = 0; i < expression.Length; i++)
-        //         {
-        //             if (count == 1)
-        //             {
-        //                 advexpression += expression[i];
-        //             }
-        //             if (expression[i] == '(')
-        //                 count++;
-        //         }
-        //         Tostack();
-        //     }
-        //     else
-        //     {
-        //         //запись в стек
-        //     }
-        //         
-        // }
-
+        
         static string ToPrefix(string expression)
         {
             List<string> result = new List<string>();
@@ -85,20 +56,6 @@ namespace RPN
             return (priorityCurrent <= priorityLast);
 
         }
-        static int CalculateRpn(string RpnExpression)
-        {
-            string output = String.Empty;
-            int result = default;
-            for (int i = 0; i < RpnExpression.Length; i++)
-            {
-                if (Char.IsDigit(RpnExpression[i]))
-                {
-                    output += RpnExpression[i];
-                }
-                return result;
-            }
-            return result;
-
-        }
+        
     }
 }
