@@ -7,7 +7,7 @@ namespace RPN
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(NotationConverter.ToPostFix("5+2*7-4:4"));
+            Console.WriteLine(Calculator.Calculate(NotationConverter.ToPostFix("5+2*7-4:4")));
         }
     }
 }
